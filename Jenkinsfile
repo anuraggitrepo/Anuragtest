@@ -7,6 +7,9 @@ pipeline {
         stage(two){
             condtion
         }
+        Stage(three){
+            conditions..
+        }
     }
 
 }
