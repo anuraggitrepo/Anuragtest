@@ -10,10 +10,10 @@ pipeline {
             
         stage(installing){
             script{
-            mkdir def
+            mkdir xyz
             }
         }
-        Stage(touch){
+        stage(touch){
             touch txt
         }
     }
