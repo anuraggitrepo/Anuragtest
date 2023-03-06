@@ -3,19 +3,19 @@ pipeline {
     stages {
         stage ('updating') {
             steps {
-            mkdir abc
+            sh mkdir abc
                 
             }
         }
             
         stage ('installing') {
             steps {
-            mkdir xyz
+            sh mkdir xyz
             }
         }
         stage ('touch') {
             steps {
-            touch txt
+            sh touch txt
             }
         
         }
