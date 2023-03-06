@@ -9,12 +9,12 @@ pipeline {
         }
             
         stage ('installing') {
-            script {
+            steps {
             echo "xyz"
             }
         }
         stage ('touch') {
-            script {
+            steps {
             echo "txt"
             }
         
