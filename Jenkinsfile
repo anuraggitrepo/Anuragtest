@@ -1,14 +1,20 @@
 pipeline {
     agent any 
     Stages{
-        stage(one){
-            condtion...
+        stage(updating){
+            script {
+            sshpass -p 'Minda00$' ssh  root@52.66.141.192  -p 22 "apt update -y"
+                
+            }
         }
-        stage(two){
-            condtion
+            
+        stage(installing){
+            script{
+            sshpass -p 'Minda00$' ssh  root@52.66.141.192 -p 22 "apt install vim -y"
+            }
         }
-        Stage(three){
-            conditions..
+        Stage(touch){
+            touch txt
         }
     }
 
