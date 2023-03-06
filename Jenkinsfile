@@ -3,14 +3,14 @@ pipeline {
     Stages{
         stage(updating){
             script {
-            sshpass -p Minda00$ ssh  root@52.66.141.192  -p 22 "apt update -y"
+            mkdir abc
                 
             }
         }
             
         stage(installing){
             script{
-            sshpass -p Minda00$ ssh  root@52.66.141.192 -p 22 "apt install vim -y"
+            mkdir def
             }
         }
         Stage(touch){
