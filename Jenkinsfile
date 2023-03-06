@@ -2,20 +2,20 @@ pipeline {
     agent any 
     stages {
         stage ('updating') {
-            steps {
-            sh mkdir abc
+            script {
+             mkdir abc
                 
             }
         }
             
         stage ('installing') {
-            steps {
-            sh mkdir xyz
+            script {
+            mkdir xyz
             }
         }
         stage ('touch') {
-            steps {
-            sh touch txt
+            script {
+            touch txt
             }
         
         }
