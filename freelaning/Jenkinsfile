@@ -1,0 +1,8 @@
+node {
+stage ('Build') {
+sh 'echo "build"'
+}
+stage ('Test') {
+sh 'echo "Test"'
+}
+}
